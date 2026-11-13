@@ -128,14 +128,6 @@
   document.getElementById("gvNext").addEventListener("click", function () { step(1); });
   viewer.addEventListener("click", function (e) { if (e.target === viewer) closeGallery(); });
 
-  /* ---- Modal CV ---- */
-  var cvModal = document.getElementById("cvModal");
-  function openCV() { cvModal.classList.add("open"); cvModal.setAttribute("aria-hidden", "false"); document.body.style.overflow = "hidden"; }
-  function closeCV() { cvModal.classList.remove("open"); cvModal.setAttribute("aria-hidden", "true"); document.body.style.overflow = ""; }
-  document.querySelectorAll(".js-cv").forEach(function (b) { b.addEventListener("click", openCV); });
-  document.getElementById("cvClose").addEventListener("click", closeCV);
-  cvModal.addEventListener("click", function (e) { if (e.target === cvModal) closeCV(); });
-
   /* ---- Menú móvil ---- */
   var mobileMenu = document.getElementById("mobileMenu");
   function openMobileMenu() { mobileMenu.classList.add("open"); mobileMenu.setAttribute("aria-hidden", "false"); document.body.style.overflow = "hidden"; }
@@ -167,7 +159,7 @@
 
   /* ---- Teclado global ---- */
   document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape") { closeGallery(); closeCV(); closeMobileMenu(); }
+    if (e.key === "Escape") { closeGallery(); closeMobileMenu(); }
     if (viewer.classList.contains("open")) {
       if (e.key === "ArrowLeft") step(-1);
       if (e.key === "ArrowRight") step(1);

@@ -97,10 +97,6 @@
       <p class="body-lead muted">Ingeniero industrial con 8+ años en obra en EE.UU., Panamá y España. Coordino gremios, controlo la calidad y ejecuto los planos al milímetro.</p>
       <a href="#experiencia" class="btn btn-accent" data-scroll>Mi trayectoria <span class="arrow">↗</span></a>
     </div>
-    <figure class="enfoque-photo">
-      <img src="assets/img/enfoque.webp" alt="Framing estructural de acero en obra" loading="lazy" width="1500" height="1125">
-      <figcaption>30.3322° N<br>81.6557° W — Jacksonville, FL</figcaption>
-    </figure>
     <div class="enfoque-stats">
       <div class="mini-stat"><div class="stat-value">8+</div><div class="stat-label">Años de experiencia en obra</div></div>
       <div class="mini-stat"><div class="stat-value stat-phrase">Gran escala</div><div class="stat-label">Proyectos con personal cualificado</div></div>
@@ -114,7 +110,7 @@
 <section class="section perfil" id="perfil">
   <div class="perfil-head">
     <span class="eyebrow">/ 03 &nbsp; Perfil</span>
-    <button class="btn btn-dark js-cv">Descargar CV <span class="arrow">↗</span></button>
+    <a class="btn btn-dark" href="assets/cv/CV-Jose-Finato-Padron.pdf" download>Descargar CV <span class="arrow">↗</span></a>
   </div>
   <p class="statement"><strong>Ingeniero industrial y jefe de obra bilingüe.</strong> <span class="muted">Dirijo equipos, coordino oficios y hago de puente entre inglés y español para que gerencia, arquitectos y cuadrillas trabajen con la misma información.</span></p>
 
@@ -177,7 +173,6 @@
       <span class="tag">Instalaciones forenses</span>
       <span class="tag">Comunidades de retiro</span>
       <span class="tag">Centros educativos</span>
-      <span class="tag">Reformas llave en mano</span>
     </div>
   </div>
 </section>
@@ -314,42 +309,46 @@
 
   <div class="project-cards">
     <button class="project-card" data-gallery="fis">
-      <div class="pc-media"><img src="assets/img/cover-fis.webp" alt="FIS Financial Center" loading="lazy"><span class="pc-count">21 fotos</span></div>
-      <div class="pc-body">
-        <span class="pc-cat mono-sm">01 / Corporativo</span>
+      <img class="pc-img" src="assets/img/cover-fis.webp" alt="FIS Financial Center" loading="lazy">
+      <span class="pc-count">21 fotos</span>
+      <span class="pc-arrow" aria-hidden="true">↗</span>
+      <div class="pc-overlay">
+        <span class="pc-cat">01 / Corporativo</span>
         <h3>FIS Financial Center</h3>
-        <p class="mono-sm">13 plantas · ~18 meses · ~130 trabajadores</p>
-        <span class="pc-see">Ver galería <span class="arrow">→</span></span>
+        <p>13 plantas · ~18 meses · ~130 trabajadores</p>
       </div>
     </button>
 
     <button class="project-card" data-gallery="ufnorth">
-      <div class="pc-media"><img src="assets/img/cover-ufnorth.webp" alt="UF Health North Phase 3" loading="lazy"><span class="pc-count">32 fotos</span></div>
-      <div class="pc-body">
-        <span class="pc-cat mono-sm">02 / Hospitalario</span>
+      <img class="pc-img" src="assets/img/cover-ufnorth.webp" alt="UF Health North Phase 3" loading="lazy">
+      <span class="pc-count">32 fotos</span>
+      <span class="pc-arrow" aria-hidden="true">↗</span>
+      <div class="pc-overlay">
+        <span class="pc-cat">02 / Hospitalario</span>
         <h3>UF Health North — Phase 3</h3>
-        <p class="mono-sm">6 plantas · 124 habitaciones</p>
-        <span class="pc-see">Ver galería <span class="arrow">→</span></span>
+        <p>6 plantas · 124 habitaciones</p>
       </div>
     </button>
 
     <button class="project-card" data-gallery="morgue">
-      <div class="pc-media"><img src="assets/img/cover-morgue.webp" alt="UF Health Morgue / Forensic Facility" loading="lazy"><span class="pc-count">48 fotos</span></div>
-      <div class="pc-body">
-        <span class="pc-cat mono-sm">03 / Forense</span>
+      <img class="pc-img" src="assets/img/cover-morgue.webp" alt="UF Health Morgue / Forensic Facility" loading="lazy">
+      <span class="pc-count">48 fotos</span>
+      <span class="pc-arrow" aria-hidden="true">↗</span>
+      <div class="pc-overlay">
+        <span class="pc-cat">03 / Forense</span>
         <h3>UF Health Morgue / Forensic Facility</h3>
-        <p class="mono-sm">Centro forense · 2 plantas</p>
-        <span class="pc-see">Ver galería <span class="arrow">→</span></span>
+        <p>Centro forense · 2 plantas</p>
       </div>
     </button>
 
     <button class="project-card" data-gallery="jean">
-      <div class="pc-media"><img src="assets/img/cover-jean.webp" alt="Jean Ribault High School" loading="lazy"><span class="pc-count">77 fotos</span></div>
-      <div class="pc-body">
-        <span class="pc-cat mono-sm">04 / Educativo</span>
+      <img class="pc-img" src="assets/img/cover-jean.webp" alt="Jean Ribault High School" loading="lazy">
+      <span class="pc-count">77 fotos</span>
+      <span class="pc-arrow" aria-hidden="true">↗</span>
+      <div class="pc-overlay">
+        <span class="pc-cat">04 / Educativo</span>
         <h3>Jean Ribault High School</h3>
-        <p class="mono-sm">~120 trabajadores propios · ~500 en obra</p>
-        <span class="pc-see">Ver galería <span class="arrow">→</span></span>
+        <p>~120 trabajadores propios · ~500 en obra</p>
       </div>
     </button>
   </div>
@@ -366,7 +365,7 @@
   <div class="sis-grid">
     <div class="sis-head">
       <span class="eyebrow">/ 06 &nbsp; Sistemas</span>
-      <h2 class="display-h2">23 sistemas<br><span class="oak">y procesos</span></h2>
+      <h2 class="display-h2">Sistemas<br><span class="oak">y procesos</span></h2>
       <p class="body-base muted">Arquitectónicos y acústicos, ejecutados y supervisados en obra, con planificación, presupuestos y control de procesos: de la estructura metálica al acabado level 5.</p>
     </div>
     <div class="sis-tags">
@@ -447,7 +446,7 @@
       <p class="body-lead">Dirección de obra, reformas y coordinación de sistemas interiores, en España y a nivel internacional.</p>
       <div class="contacto-cta">
         <a href="mailto:josefinatopadron@gmail.com" class="btn btn-ink">Escribir un email <span class="arrow">↗</span></a>
-        <button class="btn btn-ink js-cv">Descargar CV <span class="arrow">↗</span></button>
+        <a class="btn btn-ink" href="assets/cv/CV-Jose-Finato-Padron.pdf" download>Descargar CV <span class="arrow">↗</span></a>
       </div>
     </div>
     <div class="contact-card">
@@ -495,19 +494,6 @@
   <figure class="gv-stage"><img id="gvImg" src="" alt=""><figcaption id="gvCaption" class="mono-sm"></figcaption></figure>
   <button class="gv-nav gv-next" id="gvNext" aria-label="Siguiente">›</button>
   <div class="gv-thumbs" id="gvThumbs"></div>
-</div>
-
-<!-- Modal CV -->
-<div class="cv-modal" id="cvModal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Currículum">
-  <div class="cv-box">
-    <button class="cv-close" id="cvClose" aria-label="Cerrar">✕</button>
-    <span class="eyebrow">Currículum · PDF</span>
-    <h3 class="display-h3">CV de José Finato Padrón</h3>
-    <p class="body-base muted">La versión en PDF (ES / EN) estará disponible aquí para descarga. Mientras tanto, escríbeme y te lo envío al momento.</p>
-    <div class="cv-actions">
-      <a class="btn btn-accent" href="mailto:josefinatopadron@gmail.com?subject=Solicitud%20de%20CV">Pedir CV por email <span class="arrow">↗</span></a>
-    </div>
-  </div>
 </div>
 
 <!-- Toast -->
